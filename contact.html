@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta content="viewport" >
+        <link rel="stylesheet" href="webstyle.css">
+        <title>Welcome to my page</title>
+    </head>
+
+    <body>
+   <nav class="heading">
+    <ul>
+        <li><a href="about.html">About</a></li>
+        <li><a href="cv.html">CV</a></li>
+        <li><a id="name" href="index.html">Daiana Varzari</a></li>
+        <li><a href="gallery.html">Gallery</a></li>
+        <li><a href="contact.html">Contact Form</a></li>
+    </ul>
+</nav> 
+<header>
+    <div style="width: 100%;margin: 50px 0 ;">
+        <h1 style="width: 100%; text-indent: 40px; font-size: 100px; color: aliceblue; font-family: Horizon ;">CONTACT ME</h1>
+    </div>
+</header> 
+
+
+<div class="contact-wrapper">
+
+ <section style="width: 200px;">
+    <div id="contact">
+    <div><p>Austria, Krems<br>3500</p></div>
+    <div style="margin-top: 30px;"><p>Working Hours<br>Monday-Friday<br>8AM-10PM</p></div>
+    </div>
+</section>
+
+<div class="contactform">
+<form method="post" action="">
+    <fieldset>
+    <p style="font-family: Helvatica; font-size: 18px;">Name, Surname</p>
+    <div class="namesurname">
+  <input required placeholder="Name"/>
+<input placeholder="Surname"/>
+</div>
+    </fieldset>
+    <fieldset>
+<p for="email" style="font-family: Helvatica; font-size: 18px;">Email Address</p> 
+<input required type="email" id="email" col="3" placeholder="name.surname@gmail.com"/>
+</fieldset>
+<fieldset>
+<p for="message" style="font-family: Helvatica; font-size: 18px;">Messagge</p>
+<textarea required id="message" rows="5" cols="60" placeholder="I want to contact you regarding a job offer..."></textarea>
+    </fieldset>
+<input type="submit" value="Send">
+</form>
+</div>
+
+</div> <!--div for wrapper -->
+
+<footer style="width: 100%; background-color: #a58d8da5; display: flex; align-items: center; justify-content: center;height: 40px; margin-top: 20px;">
+   
+    <ul style="margin-bottom:8px; display: flex; gap: 700px; font-size: 10px; font-family: Helvatica ; font-weight:lighter ; letter-spacing: 2px;">
+        <li style="display: flex; align-items: center; text-transform: lowercase;">
+            <img src="images/email.png" alt="email" style="width:20px; margin-right:8px;">
+        email: varzaridaiana25@gmail.com
+        </li>
+        <li>
+            <img src="images/phone.png" alt="phone" style="width:20px; vertical-align:middle; margin-right:8px;">
+        phone number: +43 761234322
+        </li>
+    </ul>
+  
+</footer>
+    </body>
+</html>

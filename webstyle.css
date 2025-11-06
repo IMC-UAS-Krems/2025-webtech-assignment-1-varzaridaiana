@@ -1,0 +1,452 @@
+@font-face {
+  font-family: "Sloop";
+  src: url(Sloop-ScriptThree.ttf);
+}
+@font-face {
+  font-family: "Bebas";
+  src: url(BebasNeue\ Light.otf);
+}
+
+@font-face {
+  font-family: "Lancelot";
+  src: url(Lancelot-Regular.ttf);
+}
+
+@font-face {
+  font-family: "Helvatica";
+  src: url(helvetica-world-regular.ttf);
+}
+
+@font-face {
+  font-family: "Horizon";
+  src: url(Horizon.otf);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+
+body{
+
+    background-color: #3e0f0f;
+}
+
+.heading{
+    width: 95%;
+    margin-left: 60px;
+  
+}
+
+nav{
+    background-color: #3e0f0f;
+    width: 95%;
+  
+}
+
+
+ul {
+    margin: 10px auto;
+
+}
+
+
+ul li {
+
+list-style: none;
+display: inline-block;
+line-height: 100px;
+}
+
+
+ul li a {
+
+text-decoration: none;
+text-align: center;
+color: #f5efef;
+font-size: 20px;
+font-family:Tahoma, Geneva, Verdana, sans-serif;
+padding: 0 95px;
+text-transform: lowercase;
+display: inline-block;
+transition:all 1.0 at ease;
+
+}
+
+ul li a:hover {
+    border: 1px  #b4afaf;
+    border-style: solid; 
+    border-radius: 50%; 
+    padding: 0px 96px; 
+}
+
+#name {
+    font-size: 20px;
+    text-transform: uppercase;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    border: 1px  #eee5e5;
+    border-style: solid; 
+    border-radius: 50%;
+    transition: none;
+    font-weight: bold ;
+}
+
+/*here finishes the header*/
+
+.intro{
+    margin: 40px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+
+
+.textside{
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    justify-content: center;
+    padding: 3rem;
+}
+
+.textside h1{
+   color:antiquewhite;
+  font-size: 50px;
+  letter-spacing: 1px;
+  font-family: Horizon;
+}
+.textside h2{
+  font-family: "Sloop";
+  font-weight: 400;
+  color:antiquewhite;
+  font-size: 100px;
+  letter-spacing: 3px;
+}
+
+
+/*here starts the galerie code */
+
+#wrapper-gallery{
+    width:80%;
+    margin-left: 10%;
+    margin-right: 10%;
+    margin-top: 80px;
+}
+ 
+.gallery{
+    display: grid;
+    gap: 5px;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); 
+ 
+}
+
+/*here on the photo card code i wasnt sure on how to do it because i want to make it look like pintrest display but the images were not fitting the frame and till now i dont know how to do in such a way that the photo description only shows on the photo card not in the whole "container" of the grid */
+.photo-card{
+      position: relative;
+  margin-bottom: 1rem;         
+  overflow: hidden;
+  break-inside: avoid;          /* here i searched on stack*/
+  border-radius: 8px;
+}
+
+.photo-card img{
+    width: 100%;
+  height: auto;               
+  display: block;
+  border-radius: 8px;
+  transition: transform 0.3s ease;
+}
+
+.photo-description {
+ position: absolute;
+ bottom: 0;
+ left: 0;
+ right: 0;
+ background: rgba(0, 0, 0, 0.518);
+ color: white;
+ padding: 10px;
+ opacity: 0;
+ transition: opacity 0.3s ease;
+ text-align: center;
+}
+.photo-card:hover .photo-description {
+      opacity: 1;     
+}
+
+/*here starts the about page styling*/
+
+.designgrid {
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 30px;
+  gap: 4px;
+  display: grid;
+  grid-template-columns: 600px 500px 350px;
+  width: 90%;
+}
+
+.designgrid h1{
+  text-align: center; 
+  font-size: 80px; 
+  color: antiquewhite; 
+  font-family: Sloop;
+  font-weight: lighter;
+
+}
+
+.designgrid p{
+  font-family: Lancelot;
+  text-indent: 15px;
+  color: antiquewhite;
+  line-height: 30px;
+  font-size: 17px;
+}
+
+.designgrid img{
+  width: 100%;
+  border-radius: 15px;
+  object-fit: cover;
+}
+
+.designgrid2 {
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 0;
+  gap: 15px;
+  display: grid;
+  grid-template-columns: 320px 400px 600px;
+  width: 90%;
+
+}
+
+.designgrid2 h1{
+  text-align: end;
+  font-size: 100px; 
+  color: antiquewhite; 
+  font-family: Sloop;
+  font-weight: lighter; 
+  margin-bottom: 20px;
+}
+
+.designgrid2 p{
+  font-family: Lancelot;
+  text-indent: 15px;
+  color: antiquewhite;
+  line-height: 30px;
+  font-size: 17px;
+}
+
+.designgrid2 img{
+  border-radius: 15px;
+  object-fit:cover;
+}
+
+.fashiongrid{
+  width: 95%;
+  margin-top: 20px;
+  margin-left: auto;
+  margin-right: auto;
+  gap: 10px;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr ;
+}
+
+.fashiongrid img{
+
+  width: 300px;
+  border-radius: 15px;
+  
+}
+/*here starts the styling for cv*/
+
+.wrapper{
+  width:90%;
+  margin: 20px auto;
+
+}
+
+.text-container{
+  position: relative;
+}
+
+header h1{
+font-size: 120px; 
+color: antiquewhite; 
+font-family: Sloop;
+font-weight: lighter;
+letter-spacing: 5px;
+margin-top: 20px;
+text-indent: 300px; 
+position: relative;
+z-index: 1;   /*here i looked how to make the first part of the header overide the second one */
+}
+
+header h2{
+  font-size: 100px;
+  font-family: Lancelot;
+  font-weight: lighter;
+  color: antiquewhite;
+  position: absolute;
+  top: 40px;
+  left: 85px;
+  z-index: 0;
+}
+
+.cvimage{
+  display: flex;
+  align-content: center;
+  
+}
+
+.cvimage img{
+  width: 200px; 
+  height: fit-content;
+  border: 5px solid antiquewhite;
+  margin-left: auto; 
+  margin-right: auto;
+}
+
+.text-under-photo{
+  margin-top: 30px;
+  text-align: center;
+  font-weight: bold;
+}
+
+#textimg{ 
+  color: antiquewhite; 
+  font-family: Sloop;
+  font-weight: lighter;
+  letter-spacing: 2px;
+  font-size: 75px; 
+  margin-top: 5px; 
+  display: inline-block;
+   transform: rotate(-6deg);
+}
+
+.credentials{
+  width: 500px;
+  margin: 0 auto;
+  font-size: 20px;
+}
+
+.credentials td{
+  padding: 10px 20px;
+  vertical-align: top;
+  font-family: Bebas;
+  color: rgb(255, 255, 255);
+  font-size: large;
+  letter-spacing: 2px;
+  line-height: 20px;
+}
+
+.secondtable{
+  width: 700px;
+  margin: 60px auto;
+}
+
+.secondtable tr{
+  text-align: end;
+}
+
+.secondtable th{
+  padding-bottom: 20px;
+}
+
+.secondtable td, th{
+  padding-left: 20px;
+  padding-right: 10px;
+  font-family: Bebas;
+  color: rgb(255, 255, 255);
+  font-size: large;
+  letter-spacing: 2px;
+  line-height: 20px;
+}
+
+/*here starts the design for contacgt form*/
+
+.contact-wrapper{
+  display: flex;
+  gap:500px;
+  margin: 0 50px;
+
+}
+
+#contact{
+  width: 200px;
+  font-size: 20px;
+}
+
+#contact p{
+  font-family: Helvatica;
+  font-size: 15px;
+}
+
+.namesurname{
+  display: grid;
+ 
+  grid-template-columns: 1fr 1fr;
+  gap:20px;
+}
+
+.namesurname input{
+ padding: 10px 20px;
+ 
+ gap:20px;
+}
+
+#contact p{
+  text-align: left;
+  color: #eee5e5;
+
+}
+
+.contactform{
+  width: 600px;
+  }
+
+
+.contactform input,textarea{
+  border-radius: 20px;
+ background-color: #ffffff;
+ border: none;
+ padding: 8px 12px;
+ 
+}
+
+.contactform p{
+color: #ffffff;
+font-size: 20px;
+text-indent: 30px;
+margin-bottom: 15px;
+}
+
+.contactform fieldset{
+  border: none;
+  margin-top: 20px;
+  padding: 1rem 0;
+}
+
+@media (max-width: 600px) {
+  .intro,
+  .designgrid,
+  .designgrid2 {
+    grid-template-columns: 1fr;
+  }
+
+  ul li {
+    display: block;
+    text-align: center;
+  }
+
+  ul li a {
+    padding: 10px;
+    font-size: 16px;
+  }
+
+  .fashiongrid {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+/*i hope i did a decent job and the website looks like it does on my computer, one mistake I know i should work on and i know I didn`t include in my code is all media queries neded to make the user experience more efficient for all devices but still working towards that/*
